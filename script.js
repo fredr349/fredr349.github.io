@@ -88,7 +88,7 @@ async function getWeatherHere() {
      elmtTable.removeChild(tRows[x]);
   }
 
-  const response2 = await fetch('http://api.ipstack.com/check?access_key=8d65c9b303bb3dcae75300fc9f9f599b&output=json');
+  const response2 = await fetch('https://api.ipstack.com/check?access_key=8d65c9b303bb3dcae75300fc9f9f599b&output=json');
   const myJson2 = await response2.json();
   console.log(JSON.stringify(myJson2));
 
@@ -251,7 +251,7 @@ async function getImage(weather) {
 
 		//var data = await fetch("http://api.giphy.com/v1/gifs/search?q=bluesky&api_key=K6w8XZnRy9AFYulG7K2O93nmLsyLPSx3");
 		//console.log("Success got data", data);
-		var xhr = $.get('http://api.giphy.com/v1/gifs/search?q=' + weather + '&api_key=' + giphyApiKey);
+		var xhr = $.get('https://api.giphy.com/v1/gifs/search?q=' + weather + '&api_key=' + giphyApiKey);
 		xhr.done(function(data) {
 			console.log("Success got data", data);
 			var randomImage = randomItem(data['data']);
