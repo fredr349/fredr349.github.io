@@ -1,6 +1,5 @@
-var tbl = ['the', 'of', 'to', 'and', 'a', 'in', 'is', 'it', 'you', 'that', 'he', 'was', 'for', 'on', 'are', 'with', 'as', 'I', 'his', 'they', 'be', 'at', 'one', 'have', 'this', 'from', 'or', 'had', 'by', 'hot', 'word', 'but', 'what', 'some', 'we', 'can', 'out', 'other', 'were', 'all', 'there', 'when', 'up', 'use', 'your', 'how', 'said', 'an', 'each', 'she', 'which', 'do', 'their', 'time', 'if', 'will', 'way', 'about', 'many', 'then', 'them', 'write', 'would', 'like', 'so', 'these', 'her', 'long', 'make', 'thing', 'see', 'him', 'two', 'has', 'look', 'more', 'day', 'could', 'go', 'come', 'did', 'number', 'sound', 'no', 'most', 'people', 'my', 'over', 'know', 'water', 'than', 'call', 'first', 'who', 'may', 'down', 'side', 'been', 'now', 'find', 'any', 'new', 'work', 'part', 'take', 'get', 'place', 'made', 'live', 'where', 'after', 'back', 'little', 'only', 'round', 'man', 'year', 'came', 'show', 'every', 'good', 'me', 'give', 'our', 'under', 'name', 'very', 'through', 'just', 'form', 'sentence', 'great', 'think', 'say', 'help', 'low', 'line', 'differ', 'turn', 'cause', 'much', 'mean', 'before', 'move', 'right', 'boy', 'old', 'too', 'same', 'tell', 'does', 'set', 'three', 'want', 'air', 'well', 'also', 'play', 'small', 'end', 'put', 'home', 'read', 'hand', 'port', 'large', 'spell', 'add', 'even', 'land', 'here', 'must', 'big', 'high', 'such', 'follow', 'act', 'why', 'ask', 'men', 'change', 'went', 'light', 'kind', 'off', 'need', 'house', 'picture', 'try', 'us', 'again', 'animal', 'point', 'mother', 'world', 'near', 'build', 'self', 'earth', 'father', 'head', 'stand', 'own', 'page', 'should', 'country', 'found', 'answer', 'school', 'grow', 'study', 'still', 'learn', 'plant', 'cover', 'food', 'sun', 'four', 'between', 'state', 'keep', 'eye', 'never', 'last', 'let', 'thought', 'city', 'tree', 'cross', 'farm', 'hard', 'start', 'might', 'story', 'saw', 'far', 'sea', 'draw', 'left', 'late', 'run', "don't", 'while', 'press', 'close', 'night', 'real', 'life', 'few', 'north', 'open', 'seem', 'together', 'next', 'white', 'children', 'begin', 'got', 'walk', 'example', 'ease', 'paper', 'group', 'always', 'music', 'those', 'both', 'mark', 'often', 'letter', 'until', 'mile', 'river', 'car', 'feet', 'care', 'second', 'book', 'carry', 'took', 'science', 'eat', 'room', 'friend', 'began', 'idea', 'fish', 'mountain', 'stop', 'once', 'base', 'hear', 'horse', 'cut', 'sure', 'watch', 'color', 'face', 'wood', 'main', 'enough', 'plain', 'girl', 'usual', 'young', 'ready', 'above', 'ever', 'red', 'list', 'though', 'feel', 'talk', 'bird', 'soon', 'body', 'dog', 'family', 'direct', 'pose', 'leave', 'song', 'measure', 'door', 'product', 'black', 'short', 'numeral', 'class', 'wind', 'question', 'happen', 'complete', 'ship', 'area', 'half', 'rock', 'order', 'fire', 'south', 'problem', 'piece', 'told', 'knew', 'pass', 'since', 'top', 'whole', 'king', 'space', 'heard', 'best', 'hour', 'better', 'true', 'during', 'hundred', 'five', 'remember', 'step', 'early', 'hold', 'west', 'ground', 'interest', 'reach', 'fast', 'verb', 'sing', 'listen', 'six', 'table', 'travel', 'less', 'morning', 'ten', 'simple', 'several', 'vowel', 'toward', 'war', 'lay', 'against', 'pattern', 'slow', 'center', 'love', 'person', 'money', 'serve', 'appear', 'road', 'map', 'rain', 'rule', 'govern', 'pull', 'cold', 'notice', 'voice', 'unit', 'power', 'town', 'fine', 'certain', 'fly', 'fall', 'lead', 'cry', 'dark', 'machine', 'note', 'wait', 'plan', 'figure', 'star', 'box', 'noun', 'field', 'rest', 'correct', 'able', 'pound', 'done', 'beauty', 'drive', 'stood', 'contain', 'front', 'teach', 'week', 'final', 'gave', 'green', 'oh', 'quick', 'develop', 'ocean', 'warm', 'free', 'minute', 'strong', 'special', 'mind', 'behind', 'clear', 'tail', 'produce', 'fact', 'street', 'inch', 'multiply', 'nothing', 'course', 'stay', 'wheel', 'full', 'force', 'blue', 'object', 'decide', 'surface', 'deep', 'moon', 'island', 'foot', 'system', 'busy', 'test', 'record', 'boat', 'common', 'gold', 'possible', 'plane', 'stead', 'dry', 'wonder', 'laugh', 'thousand', 'ago', 'ran', 'check', 'game', 'shape', 'equate', 'hot', 'miss', 'brought', 'heat', 'snow', 'tire', 'bring', 'yes', 'distant', 'fill', 'east', 'paint', 'language', 'among', 'grand', 'ball', 'yet', 'wave', 'drop', 'heart', 'am', 'present', 'heavy', 'dance', 'engine', 'position', 'arm', 'wide', 'sail', 'material', 'size', 'vary', 'settle', 'speak', 'weight', 'general', 'ice', 'matter', 'circle', 'pair', 'include', 'divide', 'syllable', 'felt', 'perhaps', 'pick', 'sudden', 'count', 'square', 'reason', 'length', 'represent', 'art', 'subject', 'region', 'energy', 'hunt', 'probable', 'bed', 'brother', 'egg', 'ride', 'cell', 'believe', 'fraction', 'forest', 'sit', 'race', 'window', 'store', 'summer', 'train', 'sleep', 'prove', 'lone', 'leg', 'exercise', 'wall', 'catch', 'mount', 'wish', 'sky', 'board', 'joy', 'winter', 'sat', 'written', 'wild', 'instrument', 'kept', 'glass', 'grass', 'cow', 'job', 'edge', 'sign', 'visit', 'past', 'soft', 'fun', 'bright', 'gas', 'weather', 'month', 'million', 'bear', 'finish', 'happy', 'hope', 'flower', 'clothe', 'strange', 'gone', 'jump', 'baby', 'eight', 'village', 'meet', 'root', 'buy', 'raise', 'solve', 'metal', 'whether', 'push', 'seven', 'paragraph', 'third', 'shall', 'held', 'hair', 'describe', 'cook', 'floor', 'either', 'result', 'burn', 'hill', 'safe', 'cat', 'century', 'consider', 'type', 'law', 'bit', 'coast', 'copy', 'phrase', 'silent', 'tall', 'sand', 'soil', 'roll', 'temperature', 'finger', 'industry', 'value', 'fight', 'lie', 'beat', 'excite', 'natural', 'view', 'sense', 'ear', 'else', 'quite', 'broke', 'case', 'middle', 'kill', 'son', 'lake', 'moment', 'scale', 'loud', 'spring', 'observe', 'child', 'straight', 'consonant', 'nation', 'dictionary', 'milk', 'speed', 'method', 'organ', 'pay', 'age', 'section', 'dress', 'cloud', 'surprise', 'quiet', 'stone', 'tiny', 'climb', 'cool', 'design', 'poor', 'lot', 'experiment', 'bottom', 'key', 'iron', 'single', 'stick', 'flat', 'twenty', 'skin', 'smile', 'crease', 'hole', 'trade', 'melody', 'trip', 'office', 'receive', 'row', 'mouth', 'exact', 'symbol', 'die', 'least', 'trouble', 'shout', 'except', 'wrote', 'seed', 'tone', 'join', 'suggest', 'clean', 'break', 'lady', 'yard', 'rise', 'bad', 'blow', 'oil', 'blood', 'touch', 'grew', 'cent', 'mix', 'team', 'wire', 'cost', 'lost', 'brown', 'wear', 'garden', 'equal', 'sent', 'choose', 'fell', 'fit', 'flow', 'fair', 'bank', 'collect', 'save', 'control', 'decimal', 'gentle', 'woman', 'captain', 'practice', 'separate', 'difficult', 'doctor', 'please', 'protect', 'noon', 'whose', 'locate', 'ring', 'character', 'insect', 'caught', 'period', 'indicate', 'radio', 'spoke', 'atom', 'human', 'history', 'effect', 'electric', 'expect', 'crop', 'modern', 'element', 'hit', 'student', 'corner', 'party', 'supply', 'bone', 'rail', 'imagine', 'provide', 'agree', 'thus', 'capital', "won't", 'chair', 'danger', 'fruit', 'rich', 'thick', 'soldier', 'process', 'operate', 'guess', 'necessary', 'sharp', 'wing', 'create', 'neighbor', 'wash', 'bat', 'rather', 'crowd', 'corn', 'compare', 'poem', 'string', 'bell', 'depend', 'meat', 'rub', 'tube', 'famous', 'dollar', 'stream', 'fear', 'sight', 'thin', 'triangle', 'planet', 'hurry', 'chief', 'colony', 'clock', 'mine', 'tie', 'enter', 'major', 'fresh', 'search', 'send', 'yellow', 'gun', 'allow', 'print', 'dead', 'spot', 'desert', 'suit', 'current', 'lift', 'rose', 'continue', 'block', 'chart', 'hat', 'sell', 'success', 'company', 'subtract', 'event', 'particular', 'deal', 'swim', 'term', 'opposite', 'wife', 'shoe', 'shoulder', 'spread', 'arrange', 'camp', 'invent', 'cotton', 'born', 'determine', 'quart', 'nine', 'truck', 'noise', 'level', 'chance', 'gather', 'shop', 'stretch', 'throw', 'shine', 'property', 'column', 'molecule', 'select', 'wrong', 'gray', 'repeat', 'require', 'broad', 'prepare', 'salt', 'nose', 'plural', 'anger', 'claim', 'continent', 'oxygen', 'sugar', 'death', 'pretty', 'skill', 'women', 'season', 'solution', 'magnet', 'silver', 'thank', 'branch', 'match', 'suffix', 'especially', 'fig', 'afraid', 'huge', 'sister', 'steel', 'discuss', 'forward', 'similar', 'guide', 'experience', 'score', 'apple', 'bought', 'led', 'pitch', 'coat', 'mass', 'card', 'band', 'rope', 'slip', 'win', 'dream', 'evening', 'condition', 'feed', 'tool', 'total', 'basic', 'smell', 'valley', 'nor', 'double', 'seat', 'arrive', 'master', 'track', 'parent', 'shore', 'division', 'sheet', 'substance', 'favor', 'connect', 'post', 'spend', 'chord', 'fat', 'glad', 'original', 'share', 'station', 'dad', 'bread', 'charge', 'proper', 'bar', 'offer', 'segment', 'slave', 'duck', 'instant', 'market', 'degree', 'populate', 'chick', 'dear', 'enemy', 'reply', 'drink', 'occur', 'support', 'speech', 'nature', 'range', 'steam', 'motion', 'path', 'liquid', 'log', 'meant', 'quotient', 'teeth', 'shell', 'neck'];
 
-calcPwds = function() {
+/*calcPwds = function() {
   //Remove all previous table rows
   var elmtTable = document.getElementById("pwdTable");
   var tRows = elmtTable.getElementsByTagName('tr');
@@ -15,11 +14,11 @@ calcPwds = function() {
   var maxlen = document.querySelector("#maxlen").value;
   var ezt = document.querySelector("#ezt").checked;
   var numSub = document.querySelector("#numSub").checked;
-  /*console.log(minword);
+  console.log(minword);
   console.log(maxword);
   console.log(maxlen);
   console.log(ezt);
-  console.log(numSub);*/
+  console.log(numSub);
 
   //Generate the password data
   for(i = 0; i<10;i++){
@@ -70,4 +69,251 @@ calcPwds = function() {
     t.appendChild(trow);
   }
 
+}*/
+
+var giphyApiKey = "K6w8XZnRy9AFYulG7K2O93nmLsyLPSx3";
+
+async function getWeatherHere() {
+
+  var curzip = document.querySelector("#maxlen").value;
+
+  console.log("CURCITY: "+ curzip);
+  console.log(curzip.length);
+  //Remove all previous table rows
+  var elmtTable = document.getElementById("pwdTable");
+  var tRows = elmtTable.getElementsByTagName('tr');
+  var rowCount = tRows.length;
+
+  for (var x=rowCount-1; x>-1; x--) {
+     elmtTable.removeChild(tRows[x]);
+  }
+
+  const response2 = await fetch('http://api.ipstack.com/check?access_key=8d65c9b303bb3dcae75300fc9f9f599b&output=json');
+  const myJson2 = await response2.json();
+  console.log(JSON.stringify(myJson2));
+
+  var item2 = JSON.parse(JSON.stringify(myJson2));
+
+
+  console.log(item2.latitude);
+  console.log(item2.longitude);
+  console.log(item2.location.geoname_id);
+
+
+
+  //var lat = item.latitude;
+  //var log = item.longitude;
+  var curcity = item2.city;
+
+
+
+  var response = "";
+  if(curzip.length!=0){
+    response = await fetch('https://api.openweathermap.org/data/2.5/weather?appid=65eb62db3157df3e6d9e81b0e2e6ffcf&zip='+curzip+'&units=imperial');
+    console.log(response);
+    if(response.status!=200){
+      alert("Invalid ZIP code");
+      exit(0);
+    }
+
+  }
+  else{
+    response = await fetch('https://api.openweathermap.org/data/2.5/weather?appid=65eb62db3157df3e6d9e81b0e2e6ffcf&id='+item2.location.geoname_id+'&units=imperial');
+
+  }
+
+  const myJson = await response.json();
+  console.log(JSON.stringify(myJson));
+
+  var item = JSON.parse(JSON.stringify(myJson));
+  console.log("Current temp: " + item.main.temp + "\u00B0Fahrenheit");
+
+
+
+
+  if(curzip.length == 0){
+     curcity = item2.city;
+  } else {
+    curcity = item.name;
+  }
+  //Current City
+  t = document.querySelector("#pwdTable");
+  trow = document.createElement("tr");
+  td = document.createElement("td");
+  td2 = document.createElement("td2");
+  contents = document.createTextNode("Current city: ");
+  contents2 = document.createTextNode(curcity);
+  td.appendChild(contents);
+  td2.appendChild(contents2);
+  trow.appendChild(td);
+  trow.appendChild(td2);
+  t.appendChild(trow);
+
+  //Temperature entry
+  t = document.querySelector("#pwdTable");
+  trow = document.createElement("tr");
+  td = document.createElement("td");
+  td2 = document.createElement("td2");
+  contents = document.createTextNode("Current temperature: ");
+  contents2 = document.createTextNode(item.main.temp+"\u00B0F");
+  td.appendChild(contents);
+  td2.appendChild(contents2);
+  trow.appendChild(td);
+  trow.appendChild(td2);
+  t.appendChild(trow);
+
+  //Daily high
+  t = document.querySelector("#pwdTable");
+  trow = document.createElement("tr");
+  td = document.createElement("td");
+  td2 = document.createElement("td2");
+  contents = document.createTextNode("Daily high: ");
+  contents2 = document.createTextNode(item.main.temp_max+"\u00B0F");
+  td.appendChild(contents);
+  td2.appendChild(contents2);
+  trow.appendChild(td);
+  trow.appendChild(td2);
+  t.appendChild(trow);
+
+  //Daily Low
+  t = document.querySelector("#pwdTable");
+  trow = document.createElement("tr");
+  td = document.createElement("td");
+  td2 = document.createElement("td2");
+  contents = document.createTextNode("Daily low: ");
+  contents2 = document.createTextNode(item.main.temp_min+"\u00B0F");
+  td.appendChild(contents);
+  td2.appendChild(contents2);
+  trow.appendChild(td);
+  trow.appendChild(td2);
+  t.appendChild(trow);
+
+  //humidity
+  t = document.querySelector("#pwdTable");
+  trow = document.createElement("tr");
+  td = document.createElement("td");
+  td2 = document.createElement("td2");
+  contents = document.createTextNode("Humidity: ");
+  contents2 = document.createTextNode(item.main.humidity+ "%");
+  td.appendChild(contents);
+  td2.appendChild(contents2);
+  trow.appendChild(td);
+  trow.appendChild(td2);
+  t.appendChild(trow);
+  //description
+  t = document.querySelector("#pwdTable");
+  trow = document.createElement("tr");
+  td = document.createElement("td");
+  td2 = document.createElement("td2");
+  contents = document.createTextNode("Weather description: ");
+  contents2 = document.createTextNode(item.weather[0].description);
+  td.appendChild(contents);
+  td2.appendChild(contents2);
+  trow.appendChild(td);
+  trow.appendChild(td2);
+  t.appendChild(trow);
+
+  //Wind speed
+  t = document.querySelector("#pwdTable");
+  trow = document.createElement("tr");
+  td = document.createElement("td");
+  td2 = document.createElement("td2");
+  contents = document.createTextNode("Wind speed: ");
+  contents2 = document.createTextNode(item.wind.speed+ " MPH");
+  td.appendChild(contents);
+  td2.appendChild(contents2);
+  trow.appendChild(td);
+  trow.appendChild(td2);
+  t.appendChild(trow);
+
+  getImage(item.weather[0].description);
+  console.log(item.weather[0].description);
 }
+
+async function getImage(weather) {
+		// Pairing Forecast.io icon values with giphy search strings.
+		var searchTerms = {
+				"clear-day": "blue sky",
+				"clear sky": "blue sky",
+				"clear-night": "stars",
+				"rain": "rain",
+				"snow": "snow",
+				"sleet": "sleet",
+				"wind": "tornado",
+				"fog": "foggy",
+				"cloudy": "clouds",
+				"partly-cloudy-day": "cloudy",
+				"partly-cloudy-night": "clouds night"
+		};
+
+
+
+
+		//var data = await fetch("http://api.giphy.com/v1/gifs/search?q=bluesky&api_key=K6w8XZnRy9AFYulG7K2O93nmLsyLPSx3");
+		//console.log("Success got data", data);
+		var xhr = $.get('http://api.giphy.com/v1/gifs/search?q=' + weather + '&api_key=' + giphyApiKey);
+		xhr.done(function(data) {
+			console.log("Success got data", data);
+			var randomImage = randomItem(data['data']);
+			var url = randomImage['images']['fixed_width']['url'];
+			console.log(url);
+			//document.write("the url is ",url);
+			//setbackground(url);
+		document.body.style.backgroundImage = "url("+url+")";
+		//document.body.style.backgroundImage = "url('https://media2.giphy.com/media/3hJEosDIlwwAU/200w.gif?cid=23240eadc0e53a4072d25b1d1b07324eebff449122c418bc&rid=200w.gif')";
+			$('.js-day-').append(
+					$('<img>').prop('src', url)
+			);
+		});
+
+		function randomItem(arrayName) {
+				return arrayName[Math.floor(Math.random() * arrayName.length)];
+		};
+
+
+
+		//var url = randomImage['images']['fixed_width']['url'];
+
+
+
+
+		// const response = await fetch('http://api.giphy.com/v1/gifs/search?q=' + searchTerms[weather] + '&api_key=' + giphyApiKey);
+		// const myJson = await response.json();
+		// console.log(JSON.stringify(myJson));
+		//
+		// var randomImage =
+		// var url = randomImage['images']['fixed_width']['url'];
+		//console.log(results);
+
+		//var randomItem = randomItem();
+
+		//$.ajax('http://api.giphy.com/v1/gifs/search?q=' + searchTerms[weather] + '&api_key=' + giphyApiKey).done(function(results)
+// 		{
+// 				console.log(results);
+// 				var randomImage = randomItem(results['data']);
+// 				var url = randomImage['images']['fixed_width']['url'];
+// 				$('.js-day-').append(
+// 						$('<img>').prop('src', url)
+// 				);
+// 		}).fail(function(jqXHR, textStatus) {
+// 				alert( textStatus );
+// 		});
+// };
+// function randomItem(arrayName) {
+// 		return arrayName[Math.floor(Math.random() * arrayName.length)];
+};
+/*
+{"coord":{"lon":-93.27,"lat":44.98},
+"weather":[{"id":800,"main":"Clear","description":"clear sky","icon":"01n"}],
+"base":"stations",
+"main":{"temp":35.33,"pressure":1027,"humidity":55,"temp_min":32,"temp_max":39.2},
+"visibility":16093,
+"wind":{"speed":5.41,"deg":276},
+"clouds":{"all":1},
+"dt":1571963632,
+"sys":{"type":1,"id":2759,"country":"US","sunrise":1571920812,"sunset":1571958846},
+"timezone":-18000,
+"id":5037649,
+"name":"Minneapolis",
+"cod":200}
+*/

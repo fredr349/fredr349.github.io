@@ -1,16 +1,17 @@
 <html>
   <head>
-    <title>XKCD Password Generator</title>
+    <title>Weather Statistics</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
   </head>
   <body>
     <div class="container">
       <div class="title">
-        <h1>XKCD Password Generator</h1>
+        <h1>Weather Statistics</h1>
       </div>
       <div class = "minLen">
-        <br>
+        <!--<br>
         Minimum Word Length:
         <select id="minword">
           <option>3</option>
@@ -48,19 +49,24 @@
         <br>
         <input id="numSub" type="checkbox" name="numsub" >Number Substitutions
         <br>
+-->
+My 5-digit ZIP code (leave blank for automatic detection) <br>
+<input id ="maxlen" type="text" value="" size="20">
 
         <br>
         <br>
 
-        <button class = "submitPwd" onclick="calcPwds();">Generate Passwords</button>
+        <button class = "submitPwd" onclick="getWeatherHere();">Get your local weather!</button>
+        <br>
 
-
+        <h6>Note: Only works for the United States</h6>
 
     </div>
       <div class="outputarea">
-        <h1>List of possible passwords</h1>
+
         <table id="pwdTable">
         </table>
+
       </div>
     </div>
   </body>

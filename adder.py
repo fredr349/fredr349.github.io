@@ -1,5 +1,0 @@
-text_file = open("1000words.txt", "r")
-lines = text_file.read().split('\n')
-print(lines)
-print(len(lines))
-text_file.close()
