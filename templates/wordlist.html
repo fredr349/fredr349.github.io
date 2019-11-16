@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+{% from "_formhelpers.html" import render_field %}
+{% block content %}
+<main>
+  <!-- Button trigger modal -->
+<!--<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+  Launch demo modal
+</button>-->
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Defintion</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" id="definition">
+        def
+      </div>
+      <div class="modal-footer" id="holder" thiskey={{dictKey}}>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  function myFunction(elmnt) {
+    elmnt.style.color = "green";
+    var word = elmnt.getAttribute("text");
+    document.getElementById("exampleModalLabel").innerHTML = "Definition of "+word+ ":";
+    //console.log(word);
+    document.getElementById("definition").innerHTML = "Some definition";
+    /*var thing = $.ajax({
+      type: "POST",
+      url: "/apicall",
+      data: { mydata: word}
+    })
+
+    console.log(thing.responseText);*/
+    //var key = elmnt.getAttribute("thiskey");
+    var key = document.getElementById("holder").getAttribute("thisKey");
+
+    apiCall(word,key);
+    //document.getElementById("definition").innerHTML = def;
+
+  }
+  async function apiCall(word,key){
+    var dictKey = key;
+    const response = await fetch("https://www.dictionaryapi.com/api/v3/references/collegiate/json/"+word+"?key="+dictKey);
+    const myJson = await response.json();
+    console.log(JSON.stringify(myJson));
+    var item = JSON.parse(JSON.stringify(myJson));
+    console.log(item[0].def[0].sseq[0][0][1].dt[0][1]);
+    item =item[0].def[0].sseq[0][0][1].dt[0][1];
+    item = item.substring(4);
+
+    document.getElementById("definition").innerHTML = item;
+
+  }
+</script>
+    {% for word in wordlist: %}
+        <div class="wordbox" onclick="myFunction(this)" data-toggle="modal" data-target="#exampleModal" text={{word}}>{{ word }}</div>
+
+
+    {% endfor %}
+
+
+</main>
+{% endblock %}

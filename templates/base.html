@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/static/wordstyle.css">
+        <script src ="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel = "stylesheet">
+
+    </head>
+    <body>
+        {% block navbar %}
+        <nav>
+            <h1>Word List Program for Tom Fredrickson(fredr349)</h1>
+        </nav>
+        {% endblock %}
+
+        {% block content %}
+        default content
+        {% endblock %}
+        <br>
+        <a href="https://github.com/fredr349/">My github</a>
+        <p>Note: Due to the weird nesting of the dictionary api,
+          some defintions may return an error, or appear with strange text</p>
+    </body>
+</html>
